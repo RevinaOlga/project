@@ -15,6 +15,7 @@
 
     width: 100%;
 
+
 }
 
 
@@ -271,15 +272,7 @@ h6 {
     width: 1400px;
 }
 
-@media screen and (max-width: 1200px) {
-    
-    .portfolio-icons {
 
-        width: 700px;
-
-    }
-
-}
 .portfolio-icon {
     display: inline-block;
     width: 400px;
@@ -287,6 +280,30 @@ h6 {
     position: relative;
 
   
+}
+.portfolio-icon-name {
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+
+    width: 100px;
+    
+    position:absolute;
+
+    top: 50px;
+
+    left: -35px;
+    
+
+}
+
+
+@media screen and (max-width: 1400px) {
+    .portfolio-icons {
+        width: 700px;
+    }
+    
+    
 }
 
 .portfolio-icon-thin {
@@ -304,6 +321,7 @@ h6 {
 .portfolio-image-thin, .portfolio-image {
 
     -webkit-filter: brightness(100%);
+
 
     
 }
@@ -323,30 +341,101 @@ h6 {
 
 }
 
-.portfolio-icon-thin:hover .portfolio-plus{
+
+
+.portfolio-icon:hover .portfolio-plus, .portfolio-icon-thin:hover .portfolio-plus{
     display: inline-block;
     width: 25px;
     height: 25px;
 
     position:absolute;
-    left: 50%; 
-    top: 50%; 
+    left: 48%; 
+    top: 40%; 
 
     background: url('./image/portfolio/portfolio-plus.png') no-repeat;
+    font-size: 16px;
+    transition: font-size .3s;
 
 }
 
 
-.portfolio-icon:hover .portfolio-plus{
+
+.portfolio-bottom {
+    height: 110px;
+    background-color: #262626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /*  OUR FEATURE*/
+.our-feature {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.our-feature-left-item {
+
+    width: 350px;
+    height: 50px;
+    border: 1px solid #E7E7E7;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 25px;
+
+
+
+}
+
+.our-feature-left-item-icon {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 37px;
+    height: 32px;
+    background: url('./image/our-feature/our-feature-icon-black.png') no-repeat;
 
-    position:absolute;
-    left: 50%; 
-    top: 50%; 
-
-    background: url('./image/portfolio/portfolio-plus.png') no-repeat;
+    position: relative;
+    top: 7px;
+    margin-left: 15px;
+    margin-right: 20px;
 
 }
 
+.our-feature-left-item:hover {
+
+    border: 1px solid #FF0036;
+    
+    background-color: #FF0036;
+    color: white;
+    transition: all .3s;
+}
+
+.our-feature-left-item:hover .our-feature-left-item-icon{
+
+    background: url('./image/our-feature/our-feature-icon-red.png') no-repeat;
+
+}
+
+.col-lg-4 {
+    border:1px solid black;
+}
+
+.our-feature-left-items {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+.our-feature-left-items-foto {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

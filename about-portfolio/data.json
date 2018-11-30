@@ -1,0 +1,80 @@
+{
+    "header": {
+        "logo": "HW 13"
+    },
+    "navItems": [{
+        "name": "Home",
+        "id": "home",
+        "href": "/"
+    }, {
+        "name": "Other",
+        "id": "other",
+        "href": "/other.html"
+    }],
+    "pages": [{
+        "name": "Page 1",
+        "id": 1,
+        "previewContent": "Content for Page 1",
+        "fullContent": "Content for Page 1 Text"
+    }, {
+        "name": "Page 2",
+        "id": 2,
+        "previewContent": "Content for Page 2",
+        "fullContent": "Content for Page 2 Text"
+    }, {
+        "name": "Page 3",
+        "id": 3,
+        "previewContent": "Content for Page 3",
+        "fullContent": "Content for Page 3 Text"
+    }],
+    "otherPage": {
+        "name": "Page Other",
+        "previewContent": "Content for Page Other",
+        "fullContent": "Content for Page Other Text"
+    },
+
+
+    "spoilerItems": [{
+        "spoilerTitle": "What is creativia",
+        "spoilerContent": "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев"
+    }, {
+        "spoilerTitle": "Experiences",
+        "spoilerContent": "Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата «О пределах добра и зла»"
+    }, {
+        "spoilerTitle": "Learn more",
+        "spoilerContent": "И даже с языками, использующими латинский алфавит, могут возникнуть небольшие проблемы: в различных языках те или иные буквы встречаются с разной частотой, имеется разница в длине наиболее распространенных слов. Отсюда напрашивается вывод, что все же лучше использовать в качестве «рыбы» текст на том языке, который планируется использовать при запуске проекта. Сегодня существует несколько вариантов Lorem ipsum, кроме того, есть специальные генераторы, создающие"
+    }],
+
+    "aboutBottomIcons": [{
+        "id": 1,
+        "name": "FLAT DESIGN",
+        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "href": "#"
+    }, {
+        "id": 2,
+        "name": "RETINA READY",
+        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "href": "#"
+    }, {
+        "id": 3,
+        "name": "RESPONSIVE",
+        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "href": "#"
+    }, {
+        "id": 4,
+        "name": "CLEAN & USEFUL",
+        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "href": "#"
+    }],
+
+    "portfolioMenuItems":[{
+        "name": "ALL"
+    }, {
+        "name": "ILLUSTRATION"
+    }, {
+        "name": "DIGITAL ART"
+    }, {
+        "name": "WEB DESIGN"
+    }],
+    "currentNavItemId": null
+}
