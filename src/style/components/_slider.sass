@@ -20,41 +20,57 @@ h1
 h2
     @include font-h($fs-h2)
     margin-top: 40px
+
+@mixin button
+    display: inline-block
+    width: 170px
+    height: 50px
+    font-size: 2rem
+    color: #fff 
+    border: none
+    text-transform: uppercase
+    line-height: 50px
 .buttons
     margin-bottom: 215px
     margin-top: 50px
     height: 50px
     text-align: center
 
-.button-activ
-    width: 170px
-    height: 50px
-    font-size: 2rem
-    color: #fff 
-    background-color: $mark-color
-    border: none
-    text-transform: uppercase
-    margin: 10px 15px
 .button-dark
-    width: 170px
-    height: 50px
-    font-size: 2rem
-    color: #fff 
+    @include button
     background-color: #000000
-    border: none
-    text-transform: uppercase
     margin: 10px 15px
+    &:hover
+        background-color: $mark-color
+        text-decoration: none
+        color: #fff
 
 .main-slider
     //height: 800px
     //min-height: 500px
 
-    //width: 1400px
+    max-width: 1400px
     //min-width: 800px
     margin-right: auto
 
     margin-left: auto
     text-align: center
+.carousel-control-width
+    width: 7%
+
+.icon-size
+    width: 17px
+    height: 26px
+
+.left
+    background-image: url("/image/main/left.png")
+.right
+    background-image: url("/image/main/right.png")
+
+.carousel-control-prev:hover .left
+    background-image: url("/image/main/left-active.png")
+.carousel-control-next:hover .right
+    background-image: url("/image/main/right-active.png")
 
 
 @media screen and (max-width: 1100px)

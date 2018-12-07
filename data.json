@@ -47,27 +47,33 @@
         "link": "./image/main/2.jpg"
     }],
 
-    "pages": [{
-        "name": "Page 1",
-        "id": 1,
-        "previewContent": "Content for Page 1",
-        "fullContent": "Content for Page 1 Text"
-    }, {
-        "name": "Page 2",
-        "id": 2,
-        "previewContent": "Content for Page 2",
-        "fullContent": "Content for Page 2 Text"
-    }, {
-        "name": "Page 3",
-        "id": 3,
-        "previewContent": "Content for Page 3",
-        "fullContent": "Content for Page 3 Text"
-    }],
-    "otherPage": {
-        "name": "Page Other",
-        "previewContent": "Content for Page Other",
-        "fullContent": "Content for Page Other Text"
+    "carouselItems": [{
+        "active": "active",
+        "link": "/image/main/main-bg.jpg",
+        "title": "why",
+        "titleActive": " creativia ?",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
+        "buttonNameLeft": "features",
+        "buttonNameRight": "free psd"
     },
+    {
+        "active": "",
+        "link": "/image/main/1.jpg",
+        "title": "what is",
+        "titleActive": " creativia ?",
+        "content": "Lorem ipsum dolor sit amet. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
+        "buttonNameLeft": "skills",
+        "buttonNameRight": "free psd"
+    },
+    {
+        "active": "",
+        "link": "/image/main/2.jpg",
+        "title": "follow",
+        "titleActive": " Creativia",
+        "content": "Lorem ipsum dolor sit amet. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
+        "buttonNameLeft": "ui/ux design",
+        "buttonNameRight": "html/css"
+    }],
 
 
     "spoilers": [{
@@ -111,6 +117,16 @@
         "name": "DIGITAL ART"
     }, {
         "name": "WEB DESIGN"
+    }],
+
+    "featureItenNames":[{
+        "name": "unlimited color options"
+    },
+    {
+        "name": "outstanding support"
+    },
+    {
+        "name": "retina ready"
     }],
     "currentNavItemId": null
 }

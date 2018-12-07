@@ -1,6 +1,32 @@
+$fs-h1: 30px
+$fs-h2: 16px
+$fs-h6: 20px
+$p: 16px
+$border-color: #E7E7E7
+$bg-color: #F7F7F7
+$mark-color: #FF0036
+
+.mark-color 
+    color: $mark-color
+
+@mixin font-h($fs)
+    text-align: center
+    font-weight: bold
+    font-size: $fs
+
+h1
+    @include font-h($fs-h1)
+
+h2
+    @include font-h($fs-h2)
+    margin-top: 40px
+
 @import './_main.sass'
 
 @import './_about.sass'
 
 @import './_portfolio.sass'
 
+@import './_feature.sass'
+
+@import './_client.sass'
