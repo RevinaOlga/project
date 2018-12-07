@@ -1,0 +1,53 @@
+.container-fluid.portfolio-top
+    h1.white portfolio
+    ul.portfolio-top-menu-items
+
+        each item in portfolioMenuItems
+            li.portfolio-top-menu-item
+                a.portfolio-top-menu-item-link(href="#")= item.name
+
+
+
+
+
+
+
+
+
+mixin portfolioIcon(link, name)
+    img.portfolio-middle-item-icon(src=link)
+    .portfolio-middle-item-plus
+        .portfolio-middle-item-name= name
+
+mixin portfolioIconThin(link, name)
+    img.portfolio-middle-item-thin-icon(src=link)
+    .portfolio-middle-item-plus
+        .portfolio-middle-item-name= name
+
+
+.container-fluid
+    .row.portfolio-middle
+        - for (var i = 1; i <= 4; i++) {
+            -if (i % 2 == 0) {
+                a.portfolio-middle-item-thin(href="#")
+                    +portfolioIconThin("./image/portfolio/portfolio-icon" + i + ".png", "design name")
+            - } else {
+                a.portfolio-middle-item(href="#")
+                    +portfolioIcon("./image/portfolio/portfolio-icon" + i + ".png", "design name")
+            -}
+
+        - }
+    .row.portfolio-middle
+        - for (var i = 5; i <= 8; i++) {
+            -if (i % 2 != 0) {
+                a.portfolio-middle-item-thin(href="#")
+                    +portfolioIconThin("./image/portfolio/portfolio-icon" + i + ".png", "design name")
+            - } else {
+                a.portfolio-middle-item(href="#")
+                    +portfolioIcon("./image/portfolio/portfolio-icon" + i + ".png", "design name")
+            -}
+
+        - }
+        
+.container-fluid.portfolio-bottom
+

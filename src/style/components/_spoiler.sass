@@ -1,0 +1,46 @@
+$borderSpoilerColor: #E7E7E7
+$bgSpoilerColor: #F7F7F7
+$activeColor: #FF0036
+
+@mixin spoilerHeaderAlign ($pl, $pt)
+        padding-left: $pl
+        padding-top: $pt
+        box-sizing: border-box
+
+.spoilers
+    width: 570px
+
+.spoiler
+    margin-bottom: 10px
+
+    &_header
+        display: flex
+        background-color: $bgSpoilerColor
+        height: 45px
+        border: 1px solid $borderSpoilerColor
+
+    &_header-icon
+        width: 60px
+        border-right: 1px solid $borderSpoilerColor
+        @include spoilerHeaderAlign (20px, 13px)
+
+    &_header-title 
+        @include spoilerHeaderAlign (30px, 13px)
+
+        &__current 
+            color: $activeColor
+            @include spoilerHeaderAlign (30px, 13px)
+
+    &_content 
+        height: 0
+        padding-top: 0
+        overflow: hidden
+
+        &__current 
+            border: 1px solid $bgSpoilerColor
+            border-top: none
+            padding: 15px
+            box-sizing: border-box
+            height: 100%
+            transition: height .4s, padding-top .2s
+

@@ -1,0 +1,86 @@
+$fs-h1: 30px
+$fs-h2: 16px
+$fs-h6: 20px
+$p: 16px
+$border-color: #E7E7E7
+$bg-color: #F7F7F7
+$mark-color: #FF0036
+
+@mixin font-h($fs)
+    text-align: center
+    font-weight: bold
+    font-size: $fs
+
+h1
+    @include font-h($fs-h1)
+
+h2
+    @include font-h($fs-h2)
+    margin-top: 40px
+
+
+p
+    font-size: $p
+
+h6 
+    font-size: $fs-h6
+    margin-top: 20px
+    margin-bottom: 15px
+
+
+@import 'components/_spoiler.sass'
+
+.mark-color 
+    color: $mark-color
+
+.p-justify
+    text-align: justify
+
+
+
+
+
+.about-top 
+    margin-top: 100px
+
+
+
+.about-center
+    margin-top: 100px
+    margin-bottom: 100px
+
+
+
+.about-left-img
+    width: 100%
+
+@media screen and (max-width: 992px) 
+    .about-left-img 
+        margin-top: 40px
+
+
+.about-bottom-icons 
+    margin-bottom: 50px
+
+
+@mixin icon-align 
+    display: inline-block
+    width: 90px
+    height: 80px
+
+
+
+@for $i from 1 through 4
+    .about-bottom-icon#{$i}
+        @include icon-align
+        background: url('../image/about/#{$i}.png') no-repeat
+
+        &:hover 
+            transition: background .2s
+            background: url('../image/about/#{$i}-red.png') no-repeat
+            cursor: pointer
+
+
+
+
+

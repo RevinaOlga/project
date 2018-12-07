@@ -1,0 +1,63 @@
+$fs-h1: 30px
+$fs-h2: 16px
+$fs-h6: 20px
+$p: 16px
+$border-color: #E7E7E7
+$bg-color: #F7F7F7
+$mark-color: #FF0036
+
+.mark-color 
+    color: $mark-color
+
+@mixin font-h($fs)
+    text-align: center
+    font-weight: bold
+    font-size: $fs
+
+h1
+    @include font-h($fs-h1)
+
+h2
+    @include font-h($fs-h2)
+    margin-top: 40px
+.buttons
+    margin-bottom: 215px
+    margin-top: 50px
+    height: 50px
+    text-align: center
+
+.button-activ
+    width: 170px
+    height: 50px
+    font-size: 2rem
+    color: #fff 
+    background-color: $mark-color
+    border: none
+    text-transform: uppercase
+    margin: 10px 15px
+.button-dark
+    width: 170px
+    height: 50px
+    font-size: 2rem
+    color: #fff 
+    background-color: #000000
+    border: none
+    text-transform: uppercase
+    margin: 10px 15px
+
+.main-slider
+    //height: 800px
+    //min-height: 500px
+
+    //width: 1400px
+    //min-width: 800px
+    margin-right: auto
+
+    margin-left: auto
+    text-align: center
+
+
+@media screen and (max-width: 1100px)
+
+    .main-slider
+        

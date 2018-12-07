@@ -1,0 +1,101 @@
+$bg-dark: #262626
+$color-white: white
+
+
+
+.portfolio-top 
+
+    padding-top: 100px
+    height: 270px
+    background-color: $bg-dark
+    text-align: center
+    &-menu 
+        margin-top: 20px
+
+        &-item 
+            display: inline-block
+            font-weight: bold
+            margin-right: 20px
+            &-link 
+                color: #9F9F9F
+                &:hover 
+                    text-decoration: none
+                    color: #FF0036
+                    transition: color .2s
+
+@mixin ItemSize ($width, $height)
+    display: inline-block
+    width: $width
+    height: $height
+    position: relative
+
+@mixin ItemHoverSizePosition ($width, $height, $left, $top)
+    display: inline-block
+    width: $width
+    height: $height
+    position: absolute
+    left: $left 
+    top: $top
+
+.white 
+    color: $color-white
+
+
+.portfolio-middle
+
+    background-color: $bg-dark
+    margin-left: auto
+    margin-right: auto
+    width: 1400px
+    &-item 
+        @include ItemSize(400px, 350px)
+        &-name 
+            color: white
+            @include ItemHoverSizePosition (100px, 0, -35px, 50px)
+            font-weight: bold
+
+        &-plus
+            display: none
+        &-icon
+            -webkit-filter: brightness(100%)
+        &-thin 
+            @include ItemSize(300px, 350px)
+            &-icon
+                -webkit-filter: brightness(100%)
+
+
+
+@media screen and (max-width: 1400px) 
+    .portfolio-middle 
+        width: 700px
+
+.portfolio-middle-item-thin:hover .portfolio-middle-item-thin-icon, .portfolio-middle-item:hover .portfolio-middle-item-icon
+
+    -webkit-filter: brightness(10%)
+    transition: -webkit-filter .3s
+
+
+.portfolio-middle-item:hover .portfolio-middle-item-plus,.portfolio-middle-item-thin:hover .portfolio-middle-item-plus
+    @include ItemHoverSizePosition (25px, 25px, 48%, 40%)
+    background: url('../image/portfolio/portfolio-plus.png') no-repeat
+    font-size: 16px
+    transition: font-size .3s
+
+
+
+
+.portfolio-bottom 
+    height: 110px
+    background-color: $bg-dark
+
+
+
+
+
+
+
+
+
+
+
+
