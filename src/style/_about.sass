@@ -28,7 +28,7 @@ h6
     margin-bottom: 15px
 
 
-@import 'components/_spoiler.sass'
+@import 'component/_spoiler.sass'
 
 .mark-color 
     color: $mark-color
@@ -73,11 +73,11 @@ h6
 @for $i from 1 through 4
     .about-bottom-icon#{$i}
         @include icon-align
-        background: url('../image/about/#{$i}.png') no-repeat
+        background: url('/assets/image/about/#{$i}.png') no-repeat
 
         &:hover 
             transition: background .2s
-            background: url('../image/about/#{$i}-red.png') no-repeat
+            background: url('/assets/image/about/#{$i}-red.png') no-repeat
             cursor: pointer
 
 

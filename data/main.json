@@ -49,7 +49,7 @@
 
     "carouselItems": [{
         "active": "active",
-        "link": "/image/main/main-bg.jpg",
+        "link": "/assets/image/main/main-bg.jpg",
         "title": "why",
         "titleActive": " creativia ?",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
@@ -58,7 +58,7 @@
     },
     {
         "active": "",
-        "link": "/image/main/1.jpg",
+        "link": "/assets/image/main/1.jpg",
         "title": "what is",
         "titleActive": " creativia ?",
         "content": "Lorem ipsum dolor sit amet. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
@@ -67,7 +67,7 @@
     },
     {
         "active": "",
-        "link": "/image/main/2.jpg",
+        "link": "/assets/image/main/2.jpg",
         "title": "follow",
         "titleActive": " Creativia",
         "content": "Lorem ipsum dolor sit amet. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae",
@@ -127,6 +127,20 @@
     },
     {
         "name": "retina ready"
+    }],
+
+    "clients": [{
+        "name": "amr srour",
+        "link": "/assets/image/client/client1.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
+    },
+    {
+        "name": "sarah doe",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
+    },
+    {
+        "name": "johan de",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
     }],
     "currentNavItemId": null
 }

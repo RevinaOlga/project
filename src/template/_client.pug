@@ -1,0 +1,27 @@
+.clients
+    h1.white 
+        |our 
+        span.mark-color clients
+    h2.light
+        |Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit 
+        |. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+    .client
+        .contanier
+            .row
+                .col-6
+                    h3.white happy clients say
+
+                    each client in clients
+                        .client_block
+                            p.client-content= client.content
+                            img.client-image(src= client.link)
+                            span.client-name= client.name
+                            .check_elements
+                                .check_element
+                                .check_element
+                                .check_element
+
+
+
+                .col-6

@@ -1,0 +1,30 @@
+
+.main-slider
+
+
+    .carousel.slide#carouselExampleControls(data-ride="carousel" data-interval="false")
+        .carousel-inner
+
+            each carouselItem in carouselItems
+                div(class= carouselItem.active).carousel-item
+                    img(src= carouselItem.link)
+                    .container
+                        .carousel-caption.d-none.d-block.text-center
+                            h1= carouselItem.title
+                                span.mark-color= carouselItem.titleActive
+                            h2= carouselItem.content
+                            .buttons
+                                a.button-dark(href="#")= carouselItem.buttonNameLeft
+                                a.button-dark(href="#")= carouselItem.buttonNameRight
+
+
+                
+
+
+        a.carousel-control-prev.carousel-control-width(href="#carouselExampleControls" role="button" data-slide="prev")
+            span.carousel-control-prev-icon.icon-size.left(aria-hidden="true")
+            span.sr-only Previous
+        a.carousel-control-next.carousel-control-width(href="#carouselExampleControls" role="button" data-slide="next")
+            span.carousel-control-next-icon.icon-size.right(aria-hidden="true")
+            span.sr-only Next
+
