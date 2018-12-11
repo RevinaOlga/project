@@ -136,11 +136,145 @@
     },
     {
         "name": "sarah doe",
+        "link": "/assets/image/client/client1.png",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
     },
     {
         "name": "johan de",
+        "link": "/assets/image/client/client1.png",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
     }],
+
+    "clientRadioButtons": [{
+        "id": 1,
+        "checked": "checked"
+    },
+    {
+        "id": 2
+    },
+    {
+        "id": 3
+    }],
+
+    "clientIconsTop": [{
+        "href": "#",
+        "link": "/assets/image/client/icon1.png",
+        "name": "graphicriver"
+    },
+    {
+        "href": "#",
+        "link": "/assets/image/client/icon2.png",
+        "name": "videohive"
+    }],
+    "clientIconsBottom": [{
+        "href": "#",
+        "link": "/assets/image/client/icon3.png",
+        "name": "photodune"
+    },
+    {
+        "href": "#",
+        "link": "/assets/image/client/icon4.png",
+        "name": "codecanyon"
+    }],
+
+    "teamIcons": [{
+        "href": "https://www.facebook.com",
+        "link": "/assets/image/team/facebook.png"
+    },
+    {
+        "href": "https://www.twitter.com",
+        "link": "/assets/image/team/twitter.png"
+    },
+    {
+        "href": "https://www.plus.google.com",
+        "link": "/assets/image/team/g.png"
+    }],
+
+
+    "teamItems": [{
+        "href": "/assets/image/team/foto2.jpg",
+        "name": "bruce wayne",
+        "profession": "Webdisigner"
+    },
+    {
+        "href": "/assets/image/team/foto2.jpg",
+        "name": "amr srour",
+        "profession": "Webdisigner"
+    },
+    {
+        "href": "/assets/image/team/foto3.jpg",
+        "name": "sarah doe",
+        "profession": "Webdisigner"
+    },
+    {
+        "href": "/assets/image/team/foto4.jpg",
+        "name": "johan de",
+        "profession": "Webdisigner"
+    }],
+
+    "skillItems": [{
+        "id": 1,
+        "percent": 90,
+        "name": "photoshop",
+        "content": "Donec luctus tortor in placerat faucibus"
+    },
+    {   
+        "id": 2,
+        "percent": 80,
+        "name": "html",
+        "content": "Donec luctus tortor in placerat faucibus"
+    },
+    {   
+        "id": 3,
+        "percent": 70,
+        "name": "php",
+        "content": "Donec luctus tortor in placerat faucibus"
+    },
+    {   
+        "id": 4,
+        "percent": 90,
+        "name": "wordpress",
+        "content": "Donec luctus tortor in placerat faucibus"
+    }],
+
+    "serviceItemsLeft": [{
+        "href": "#",
+        "id": 1,
+        "name": "development",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 2,
+        "name": "wordpress",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 3,
+        "name": "ui /ux design",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    }],
+
+    "serviceItemsRight": [{
+        "href": "#",
+        "id": 4,
+        "name": "html / css",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 5,
+        "name": "applications",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    },
+    {
+        "href": "#",
+        "id": 6,
+        "name": "responsive layout",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+    }],
+
+
     "currentNavItemId": null
 }

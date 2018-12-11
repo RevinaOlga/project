@@ -1,0 +1,72 @@
+.skills
+    margin: 0 auto
+    padding-bottom: 10rem
+    max-width: 1170px
+    &_wrap
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 10rem
+@mixin alighCenter
+    display: flex
+    justify-content: center
+    align-items: center
+    & .digit
+        font-size: 4rem
+
+@mixin circle($percent, $color-active, $color-light)
+
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    border: solid 3px transparent
+    background-image: linear-gradient(white, white), linear-gradient(270deg, $color-light 10%, $color-light (100% - $percent), $color-active (100% - $percent), $color-active 100%)
+    background-clip: padding-box, border-box
+    background-origin: padding-box, border-box
+
+    background-repeat: no-repeat
+.test1
+    @include circle(70%, red, blue)
+.skill
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0 2rem
+    max-width: 17rem
+
+    &_name
+        font-size: 2rem
+        text-transform: uppercase
+        margin: 2rem 0
+    &_content
+        font-size: 1.6rem
+        text-align: center
+
+@media screen and (max-width: 1000px)
+    .skills_wrap
+        flex-wrap: wrap
+    .skill
+        margin: 5rem 2rem
+
+.skill_circle1
+    @include circle(90%, $activeColor, $circleLight)
+    @include alighCenter
+
+.skill_circle2
+    @include circle(80%, $activeColor, $circleLight)
+    @include alighCenter
+
+
+
+.skill_circle3
+    @include circle(70%, $activeColor, $circleLight)
+    @include alighCenter
+
+
+
+.skill_circle4
+    @include circle(90%, $activeColor, $circleLight)
+    @include alighCenter
+
+

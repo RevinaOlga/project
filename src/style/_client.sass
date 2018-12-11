@@ -1,47 +1,112 @@
-.clients
-    background: url("/assets/image/client/bg-client.jpg") no-repeat
+h2.light
+    color: $menuLink
+
+.client
+    background: url("/assets/image/client/bg-client.jpg") rgba($bgHeader, 0.9) no-repeat
     margin: 0 auto
-    width: 1400px
-    height: 650px
-    padding: 10rem 0
-.white
-    color: #fff
+    max-width: 1400px
+    min-height: 650px
+    padding-top: 10rem
 
-.light
-    color: $menuLink
+    &_block
+        margin: 10rem auto
+        max-width: 1160px
+        display: flex
 
-.client-content
-    color: $menuLink
-    margin: 5rem 0
-h3 
+        &-items
+            margin: 0 2rem
+
+        &-item
+            display: none
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+            & .item_name
+                font-size: 1.6rem
+                color: $mark-color
+                text-transform: uppercase
+                margin: 1.5rem 0 2rem 0
+
+            & .item_content
+                color: $menuLink
+                margin: 5rem 0
+
+            &__active
+                display: flex
+
+
+
+h3.items_title 
     font-size: 2rem
     text-transform: uppercase
     text-align: center
-    //margin-bottom: 5rem
+    color: #fff
 
-.client-name
-    font-size: 1.6rem
-    color: $mark-color
-    text-transform: uppercase
-    margin: 2rem 0 3rem 0
 
-.client_block
+.client_radio_buttons
     display: flex
-    flex-direction: column
     align-items: center
-    text-align: center
-    
-
-.client
-    margin: 10rem auto
-    max-width: 1160px
-
-.check_elements
-    display: flex
+    justify-content: center
 
 
-.check_element
+.client-radio_button input
+    display: none
+
+.client-radio_button label::after
+    content: ''
+    display: inline-block
     width: 8px
     height: 8px
     margin: 0 3px
     background-color: #E0E0E0
+
+.client-radio_button:hover input:not(:checked) ~ label::after
+    background-color: $mark-color
+    display: block
+    cursor: pointer
+
+.client-radio_button input:checked ~ label::after
+    background-color: $mark-color
+    color: red
+    display: block
+
+
+
+
+.client_icons
+    margin: 0 2rem
+    &-wrap
+        display: flex
+        justify-content: space-between
+
+
+.client_icon
+
+    width: 270px
+    height: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: radial-gradient(ellipse, #fff 20%, #EDEDED 40%, #777)
+    color: #000
+    margin: 0 1.5rem 3.5rem
+
+    &-title
+        font-size: 3rem
+    &-image
+         margin-right: 1rem
+    &:hover
+        background: #fff
+        text-decoration: none
+        color:#000
+
+
+
+@media screen and (max-width: 900px)
+    .client_block
+        flex-direction: column
+
+    .client_icons-wrap
+        margin-top: 5rem
+        justify-content: center

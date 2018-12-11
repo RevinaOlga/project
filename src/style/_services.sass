@@ -1,0 +1,67 @@
+.services
+    margin: 0 auto
+    padding: 10rem 0
+    max-width: 1400px
+    background-color: $bgDark
+
+.service_hexagon
+    @include hexagon(60px, 35px, $menuLink)
+
+.service
+    &_wrap
+        display: flex
+        justify-content: center
+        margin-top: 10rem
+    &_column
+        display: flex
+        flex-direction: column
+        margin: 0 1.5rem
+
+    &-item
+        display: flex
+        flex-direction: column
+        max-width: 57rem
+        margin: 1.5rem 0
+        & .item_content
+            color: #fff
+            font-size: 1.6rem
+            min-height: 13rem
+            background-color: $servicBlock
+            display: flex
+            align-items: center
+            padding: 2rem 3rem
+            text-align: justify
+
+        & .item_title
+            display: flex
+            align-items: center
+            min-height: 12rem
+            
+
+            &-name
+                color: #fff
+                font-size: 2rem
+                text-transform: uppercase
+                margin-left: 3rem
+            & a.icon
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 0 1rem
+
+                & img
+               
+                    transform: rotate(-90deg)
+
+
+            & a.icon:hover
+                @include hexagon(60px, 35px, $activColor)
+
+
+
+
+@media screen and (max-width: 900px)
+    .service_wrap
+        flex-wrap: wrap
+
+
