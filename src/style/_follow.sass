@@ -1,0 +1,48 @@
+@import 'component/_hexagon-border.sass'
+.follow
+    padding: 10rem 0
+    margin: 0 auto
+    width: 90rem
+    font-size: 3rem
+
+.hexagon-border
+    @include hexagonBorder(68px, $activeColor, 1px, transparent)
+
+.follow
+    width: 140rem
+    height: 38rem
+    position: relative
+    &_layer
+        width: 100%
+        height: 100%
+        position: absolute
+        padding: 10rem 0
+.follow_layer-background
+    width: 100%
+    background-image: url("/assets/image/main/main-bg.jpg")
+
+
+.follow_layer.follow_layer-dark
+    background-color: rgba(#000, 0.5)
+
+.follow_content
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+    font-size: 1.6rem
+
+    &-item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 5rem
+        padding-top: 5rem
+        a.item_icon
+            &:hover
+
+        & .item_digit
+            margin-top: 5rem
+a.hexagon-border:hover
+    @include hexagonBorder(68px, $activeColor, 20px, $activeColor)

@@ -1,0 +1,12 @@
+extends ./_template.pug
+block head
+    link(rel="stylesheet" type="text/css" href="/style/user-info.css")
+block container
+
+    include component/_header.pug
+
+    .user-info
+        .user-info_wrap
+            .user-info_image
+            .user-info_name Admin
+        .user-info_line

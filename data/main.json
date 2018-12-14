@@ -275,6 +275,38 @@
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
     }],
 
+    "posts": [{
+        "id": 3,
+        "title": "Why you should always first ",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. Donec in purus elementum, sagittis magna sit amet ...",
+        "href": "./user-info.html",
+        "user": "Admin",
+        "comment": 2,
+        "view": 255
+    },
+    {
+        "id": 4,
+        "title": "Why you should always first ",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. Donec in purus elementum, sagittis magna sit amet ...",
+        "href": "./user-info.html",
+        "user": "Admin",
+        "comment": 2,
+        "view": 185
+    }],
+
+    "comments": [{
+        "name": "John Leonard",
+        "data": "14 december, 2018",
+        "content": "Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante id. Donec orci arcu, sagittis ut finibus vitae."
+
+    },
+    {
+        "name": "Jody Parker",
+        "data": "15 december, 2018",
+        "content": "Aenean eget varius augue, nec gravida lectus. Pellentesque in imperdiet us, ac efficitur risus. Etiam laoreet dapibus lorem vitae aliquam. Sed elementum ligula, molestie consectetur massa rhoncus at."
+        
+    }],
+
 
     "currentNavItemId": null
 }

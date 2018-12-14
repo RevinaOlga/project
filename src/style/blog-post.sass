@@ -1,0 +1,135 @@
+
+$fs-h1: 30px
+$fs-h2: 16px
+$fs-h6: 20px
+$p: 16px
+$border-color: #E7E7E7
+$bg-color: #F7F7F7
+
+$mark-color: #FF0036
+$darkGreyColor: #505050
+$darkColor: #2E2E2E
+
+$width: 1170px
+$menuLink: #A4A4A4
+$menuLinkHover: #fff
+$heightMenu: 7rem
+$activColor: #FF0036
+$bgHeader: #000000
+$circleLight: #E0E0E0
+$bgDark: #272727
+$servicBlock: #343434
+$servicBlockActiv: #3D2329
+
+.italic
+    font-style: italic
+
+.mark-color 
+    color: $mark-color
+
+@mixin font-h($fs)
+    text-align: center
+    font-weight: bold
+    font-size: $fs
+
+h1
+    @include font-h($fs-h1)
+
+h2
+    @include font-h($fs-h2)
+    margin-top: 40px
+
+
+@import 'component/_header.sass'
+
+.blog_post-wrap
+    padding: 10rem 0
+    background-color: #F6F6F6
+    width: 100%
+.blog_post
+    margin: 0 auto
+    max-width: 80rem
+    
+    & h1
+        text-align: left
+
+    &-meta
+        text-transform: uppercase
+        font-size: 2rem
+        display: flex
+        margin: 3rem 0
+        & .meta_item
+            margin-right: 3rem
+            & .comment, .view
+                margin-left: .5rem
+    & .blog_post-user
+        font-size: 1.6rem
+
+.comments
+    padding: 5rem 0
+    margin: 0 auto
+    max-width: 80rem
+.comment_title
+    font-size: 3rem
+
+
+
+.comment_block
+    display: flex
+    flex-direction: column
+    margin: 2rem 0
+    font-size: 1.6rem
+    &-head
+        display: flex
+        justify-content: space-between
+        margin: 1rem 0
+
+.comments_form-wrap
+    background-color: #F6F6F6
+    width: 100%
+.comments_form
+    max-width: 80rem
+    margin: 0 auto
+    padding: 5rem
+
+    & form
+
+        & input.login, input.email
+
+            width: 30rem
+            height: 4rem
+            border: none
+            //border-radius: 8px
+            margin-right: 2rem
+            font-size: 2rem
+            padding: 0 1rem
+            &:focus
+                outline: none
+
+
+        & textarea.comment
+            width: 62rem
+            height: 20rem
+            border: none
+            //border-radius: 10px
+            margin: 2rem 0
+            font-size: 2rem
+            padding: 1rem
+            &:focus
+                outline: none
+        & input.button
+            width: 15rem
+            height: 4rem
+            border: none
+            text-transform: uppercase
+            font-size: 1.2rem
+            color: #fff
+            background-color: #000
+            &:hover
+                background-color: $darkGreyColor
+                cursor: pointer
+
+
+.comments_form-title
+    font-size: 3rem
+    margin: 3rem 0

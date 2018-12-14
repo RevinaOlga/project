@@ -1,0 +1,119 @@
+$buttonDropDown: #F2F2F2
+
+
+.blog
+    margin: 0 auto
+    padding-bottom: 10rem
+    padding-top: 10rem
+    max-width: 1000px
+
+.blog_wrap
+    margin-top: 10rem
+    &__closed
+        height: 0
+        overflow: hidden
+    &__opened
+        height: 100%
+        transition: height 2s
+        margin-top: -5rem
+        
+.blog_block
+    display: flex
+    justify-content: center
+    margin: 5rem 0
+
+.blog_block-image
+    margin: 0 1.5rem
+    //width: 100%
+    height: 20rem
+
+    & .image-layer1
+        height: 100%
+        width: 100%
+
+
+
+.blog_block-post
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    //width: 58rem
+    margin: 0 1.5rem
+
+.post_title
+    font-size: 2rem
+
+
+
+.post_content
+    font-size: 1.6rem
+    text-align: justify
+
+a.post_button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 12rem
+    height: 4rem
+    background-color: #000
+    text-transform: uppercase
+    font-size: 1.6rem
+    color: #fff
+    &:hover
+        background-color: $activeColor
+        cursor: pointer
+        text-decoration: none
+        //color: #fff
+
+@media screen and (max-width: 800px)
+    .blog_block
+        flex-wrap: wrap
+    .blog_block-post
+        
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        min-height: 18rem
+        margin: 2rem 1.5rem
+
+
+
+.blog_drop-down
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 4.5rem
+    height: 4.5rem
+    background-color: $buttonDropDown
+    border-radius: 50%
+    font-size: 2rem
+    font-weight: bold
+    transform: rotate(-90deg)
+    margin: 0 auto
+
+    &:hover
+        cursor: pointer
+
+.blog_drop-down__current
+    transform: rotate(90deg)
+
+
+.post_meta
+    display: flex
+
+.meta_item
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 1.2rem
+    margin-right: 2rem
+    & a.user-icon
+        display: inline-block
+        background: url("/assets/image/blog/user.png") no-repeat
+        width: 1.5rem
+        height: 1.6rem
+        &:hover
+            background: url("/assets/image/blog/user-active.png") no-repeat
+            cursor: pointer
+    & .meta_user
+        margin-left: 0.8rem
