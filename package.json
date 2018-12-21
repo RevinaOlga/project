@@ -1,6 +1,6 @@
 {
   "name": "project",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "scripts": {
     "build": "gulp build",
     "dev": "gulp dev",
@@ -14,11 +14,12 @@
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "jquery": "^3.3.1",
     "merge-stream": "^1.0.1",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
     "reset-css": "^4.0.1"
   },
-  "dependencies": {},
-  "author": "Revina Olga"
+  "author": "Maksim Yakusik"
 }
