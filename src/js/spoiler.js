@@ -6,7 +6,6 @@
 
         spoilerContent = document.querySelectorAll('.spoiler_content');
 
-    // Изменение вида мыши при наведении
 
     spoilerIcon.forEach(function (element) {
 
@@ -21,7 +20,7 @@
 
     });
 
-    // Изменение icon, title, content при нажатии
+
 
     spoilerIcon.forEach(function (element, index) {
 
@@ -32,13 +31,13 @@
             if (spoilerTitle[index].classList.contains('spoiler_header-title__current')) {
 
 
-                this.setAttribute('src', 'image/spoiler-icon-plus.png');
+                this.setAttribute('src', '/assets/image/spoiler-icon-plus.png');
 
 
             } else {
 
 
-                this.setAttribute('src', 'image/spoiler-icon-minus.png');
+                this.setAttribute('src', '/assets/image/spoiler-icon-minus.png');
 
 
 

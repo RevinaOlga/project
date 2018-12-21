@@ -1,48 +1,38 @@
-@import 'component/_hexagon-border.sass'
-.follow
-    padding: 10rem 0
-    margin: 0 auto
-    width: 90rem
-    font-size: 3rem
-
 .hexagon-border
-    @include hexagonBorder(68px, $activeColor, 1px, transparent)
+    @include hexagonBorder(68px, $activColor, 1px, transparent)
 
 .follow
-    width: 140rem
-    height: 38rem
-    position: relative
-    &_layer
-        width: 100%
-        height: 100%
-        position: absolute
-        padding: 10rem 0
-.follow_layer-background
-    width: 100%
-    background-image: url("/assets/image/main/main-bg.jpg")
+    padding-bottom: 10rem
+    padding-top: 10rem
+    margin: 0 auto
+    font-size: 3rem
+    max-width: 140rem
+    background-image: url("/assets/image/follow/follow.jpg")
+
+    &_content
+        @include alighCenter
+        color: $light
+        font-size: 1.6rem
+        font-family: $fontLato
+
+        &-item
+            @include alighCenter
+            flex-direction: column
+            margin: 0 5rem
+            padding-top: 5rem
 
 
-.follow_layer.follow_layer-dark
-    background-color: rgba(#000, 0.5)
+            & .item_digit
+                margin-top: 5rem
 
-.follow_content
-    display: flex
-    justify-content: center
-    align-items: center
-    color: #fff
-    font-size: 1.6rem
+            & a.hexagon-border:hover
+                @include hexagonBorder(68px, $activColor, 20px, $activColor)
+                
 
-    &-item
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        margin: 0 5rem
-        padding-top: 5rem
-        a.item_icon
-            &:hover
+@media screen and (max-width: 600px)
 
-        & .item_digit
-            margin-top: 5rem
-a.hexagon-border:hover
-    @include hexagonBorder(68px, $activeColor, 20px, $activeColor)
+    .follow_content
+        flex-wrap: wrap
+
+    .follow
+        min-height: 50rem

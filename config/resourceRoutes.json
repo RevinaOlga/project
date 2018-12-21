@@ -1,13 +1,5 @@
 [
     {
-        "from": "./node_modules/bootstrap/dist/css/bootstrap.css",
-        "to": "/libs/bootstrap/bootstrap.css"
-    },
-    {
-        "from": "./node_modules/bootstrap/dist/",
-        "to": "/libs/bootstrap"
-    },
-    {
         "from": "./node_modules/jquery/dist/jquery.js",
         "to": "/libs/jquery/jquery.js"
     },

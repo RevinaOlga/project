@@ -1,79 +1,78 @@
-$fs-h1: 30px
-$fs-h2: 16px
-$fs-h6: 20px
-$p: 16px
-$border-color: #E7E7E7
-$bg-color: #F7F7F7
-$mark-color: #FF0036
+@keyframes animateSlide 
+    from 
+        opacity: .4
+    
+    to 
+        opacity: 1
 
-.mark-color 
-    color: $mark-color
+.slider
+    max-width: 140rem
+    position: relative
+    margin: auto
+    height: 70rem
+    margin-bottom: 15px
 
-@mixin font-h($fs)
-    text-align: center
+    &_item img 
+        width: 140rem
+        height: 70rem
+
+    &_item 
+        animation-name: animateSlide
+        animation-duration: 1.5s
+        height: 70rem
+        display: none
+
+
+        &-content
+            position: absolute
+            color: $lightGreyColor
+            margin: 0 auto
+            flex-direction: column
+            left: 0
+            right: 0
+            top: 30%
+            max-width: 80%
+
+
+@mixin slideButton
+    cursor: pointer
+    position: absolute
+    top: 45%
+    padding: 2rem
+    color: $lightGreyColor
     font-weight: bold
-    font-size: $fs
+    font-size: 3rem
+    transition: 0.6s ease
 
-h1
-    @include font-h($fs-h1)
+.slider .prev
+    @include slideButton
+    left: 0
+    border-radius: 0 3px 3px 0
 
-h2
-    @include font-h($fs-h2)
-    margin-top: 40px
+.slider .next 
+    @include slideButton
+    right: 0
+    border-radius: 3px 0 0 3px
 
-@mixin button
-    display: inline-block
-    width: 170px
-    height: 50px
-    font-size: 2rem
-    color: #fff 
-    border: none
-    text-transform: uppercase
-    line-height: 50px
+
+.slider .prev:hover, .slider .next:hover 
+    background-color: rgba(0, 0, 0, 0.8)
+    color: $activColor
+
+
 .buttons
-    margin-bottom: 215px
+    margin-bottom: 180px
     margin-top: 50px
     height: 50px
     text-align: center
 
 .button-dark
     @include button
-    background-color: #000000
+    background-color: $bgHeader
     margin: 10px 15px
+    transition-duration: .3s
+    text-decoration: none
+
     &:hover
-        background-color: $mark-color
-        text-decoration: none
-        color: #fff
-
-.main-slider
-    //height: 800px
-    //min-height: 500px
-
-    max-width: 1400px
-    //min-width: 800px
-    margin-right: auto
-
-    margin-left: auto
-    text-align: center
-.carousel-control-width
-    width: 7%
-
-.icon-size
-    width: 17px
-    height: 26px
-
-.left
-    background-image: url("/assets/image/main/left.png")
-.right
-    background-image: url("/assets/image/main/right.png")
-
-.carousel-control-prev:hover .left
-    background-image: url("/assets/image/main/left-active.png")
-.carousel-control-next:hover .right
-    background-image: url("/assets/image/main/right-active.png")
-
-
-@media screen and (max-width: 1100px)
-
-    .main-slider
-        
+        background-color: $activColor
+        color: $light

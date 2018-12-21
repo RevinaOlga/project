@@ -1,12 +1,5 @@
-$width: 1170px
-$menuLink: #A4A4A4
-$menuLinkHover: #fff
-$heightMenu: 7rem
-$activColor: #FF0036
-$bgHeader: #000000
 
-@mixin linkAlign
-    display: inline-block
+@mixin lineAlign
     background: url('/assets/image/main/hover-line.png') no-repeat
     width: 30px
     height: 3px
@@ -15,57 +8,58 @@ $bgHeader: #000000
     left: 0
     right: 0
 
-html
-    font-size: 10px
-
-
-.main-header
-    width: 100%
+.main_header
+    max-width: 140rem
     background-color: $bgHeader
-    height: $heightMenu
+    margin: 0 auto
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1
 
 .header
-    height: $heightMenu
     display: flex
     justify-content: space-between
-    background-color: $bgHeader
-    max-width: $width
+    max-width: 1170px
     margin: 0 auto
+    background-color: $bgHeader
+    height: $heightMenu
+
+
     &_logo
         height: $heightMenu
+
     &_menu
         margin-right: 4rem
+
+
         &-item
             display: inline-block
             margin: 0 1rem
-            
-            
+
 .item_link
     display: inline-block
     text-transform: uppercase
+    font-family: $fontRaleway
     font-size: 1.8rem
-    color: $menuLink
+    color: $lightGreyColor
     line-height: $heightMenu
     position: relative
+    text-decoration: none
 
     &:hover
-        text-decoration: none
-        color: $menuLinkHover
+        color: $light
 
         & .line_bottom
-            @include linkAlign
+            @include lineAlign
             bottom: 0
 
+
         & .line_top
-            @include linkAlign
+            @include lineAlign
             top: 0
-            
 
-
-
-//@media screen and (max-width: 400px)
-//    .header_logo
-//        display: none
 
 @media screen and (max-width: 1100px)
 
@@ -76,30 +70,29 @@ html
         opacity: 0.2
 
     .header_menu
-        //display: block
         height: 0
-        //padding-top: 0
         overflow: hidden
+
         &__current
-            //display: block
             margin-right: 0
-            //padding-left: 4rem
             height: $heightMenu*8
             transition: height .5s ease-out
-            //opacity: 1
+
         &-item
             margin: 0
+
         &-item__current
-            display: list-item
-            //padding-left: 0
+            display: block
+
 
     .item_link
         margin-right: 0
+
+
         &__current
             display: block
             background-color: rgba($bgHeader, 0.9)
             padding-left: 5rem
-            //margin-right: 0
 
         &:hover .line_top
             display: none
@@ -109,7 +102,6 @@ html
 
 
     .header_button
-        //display: block
         height: 4rem
         width: 6rem
         border: 1px solid #414141
@@ -117,11 +109,8 @@ html
         position: absolute
         top: 1.5rem
         right: 3.5rem
-
-        &__current
-        //position: absolute
-        //top: 1.5rem
-        //right: 3.5rem
+        @include alighCenter
+        transition-duration: .3s
 
         &:hover
             border: 1px solid $activColor
@@ -130,12 +119,8 @@ html
                 background: url('/assets/image/main/menu-button-line-active.png') no-repeat
 
     .button-lines
-
         height: 1.6rem
         width: 2.6rem
-        margin-left: auto
-        margin-right: auto
-        position: relative
-        top: 1rem
         background: url('/assets/image/main/menu-button-line.png') no-repeat
+        transition-duration: .3s
 

@@ -1,17 +1,21 @@
 .services
     margin: 0 auto
     padding: 10rem 0
-    max-width: 1400px
+    max-width: 140rem
     background-color: $bgDark
 
 .service_hexagon
-    @include hexagon(60px, 35px, $menuLink)
+    @include hexagonBorder(60px, $lightGreyColor, 15px, $lightGreyColor)
+
+
 
 .service
+
     &_wrap
         display: flex
         justify-content: center
         margin-top: 10rem
+
     &_column
         display: flex
         flex-direction: column
@@ -22,42 +26,35 @@
         flex-direction: column
         max-width: 57rem
         margin: 1.5rem 0
+
         & .item_content
-            color: #fff
-            font-size: 1.6rem
+            @include textContentFont($lightGreyColor)
             min-height: 13rem
             background-color: $servicBlock
             display: flex
             align-items: center
             padding: 2rem 3rem
             text-align: justify
+            transition: background-color .5s
 
         & .item_title
             display: flex
             align-items: center
             min-height: 12rem
-            
+            @include linkTitle($darkGreyColor, uppercase)
 
             &-name
-                color: #fff
+                color: $light
                 font-size: 2rem
                 text-transform: uppercase
                 margin-left: 3rem
+
             & a.icon
-                display: flex
-                justify-content: center
-                align-items: center
+                @include alighCenter
                 margin: 0 1rem
 
-                & img
-               
-                    transform: rotate(-90deg)
-
-
             & a.icon:hover
-                @include hexagon(60px, 35px, $activColor)
-
-
+                @include hexagonBorder(60px, $activColor, 15px, $activColor)
 
 
 @media screen and (max-width: 900px)

@@ -1,39 +1,32 @@
-.container
-    .about-top
+.about(id="about")
+    .center
         h1
             | about 
             span.mark-color creativia
-        h2
-            | Lorem ipsum dolor sit amet, consectetur 
-            span.mark-color adipiscing elit.
-            | Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+    h2.boldGrey
+        | Lorem ipsum dolor sit amet, consectetur 
+        span.mark-color adipiscing elit.
+        | Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
 
-    .about-center
-        .row
-            .col-lg-6.col-sm-12
-                p.p-justify
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, 
+    .about_center
+        
+        .about_center-left
+            p.p-justify
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae
 
-                .spoiler
-                    include component/_spoiler.pug
-
-                
-
-            .col-lg-6.col-sm-12.text-center
-                img.about-left-img(src="/assets/image/about/about2.jpg")
+            .about_spoiler
+                include component/_spoiler.pug
 
 
+        .about_center-right
+            img(src="/assets/image/about/about1.jpg")
 
-    .about-bottom-icons
-        .row
 
-            mixin linkClass(href)
-                a(href=href)&attributes(attributes)
-            
+    .about_bottom
 
-            each icon in aboutBottomIcons
+        each icon in aboutBottomIcons
 
-                .col-lg-3.col-sm-6.text-center
-                    +linkClass(icon.link)(class= "about-bottom-icon" + icon.id)
-                    h6= icon.name
-                    p= icon.content
+            .about_bottom-icon
+                a(href=icon.link class= "about_bottom-icon" + icon.id)
+                .icon_name= icon.name
+                p= icon.content

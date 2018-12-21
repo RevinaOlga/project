@@ -1,125 +1,58 @@
-document.querySelectorAll('.slides').forEach(function (element) {
+(function () {
 
+    var slideIndex = 1,
+        linkPrev = document.querySelector('.slider .prev'),
+        linkNext = document.querySelector('.slider .next');
 
 
-    var slideSize = element.clientWidth,
+    showSlides(slideIndex);
 
-        currentPosition = 0,
 
-        intervalId,
 
-        leftButton = document.querySelector('.left'),
+    linkNext.onclick = function () {
 
-        rightButton = document.querySelector('.right');
-
-
-
-
-
-        //intervalId = setInterval(SetInt, 2000);
-
-
-
-
-
-    rightButton.addEventListener('click', function () {
-
-
-
-        //clearInterval(intervalId);
-
-
-
-        
-
-        currentPosition += slideSize;
-
-
-
-        element.scroll({left: currentPosition, behavior: 'smooth'});
-
-        
-
-
-
-        //intervalId = setInterval(SetInt, 2000);
-
-
-
-
-
-    });
-
-
-
-
-
-    leftButton.addEventListener('click', function () {
-
-
-
-        //clearInterval(intervalId);
-
-
-
-        
-
-        currentPosition -= slideSize;
-
-
-
-        element.scroll({left: currentPosition, behavior: 'smooth'});
-
-        
-
-
-
-        //intervalId = setInterval(SetInt, 2000);
-
-
-
-
-
-    });
-
-
-
-
-
-
-
-    function SetInt() {
-
-
-
-
-
-        currentPosition += slideSize;
-
-
-
-        if (currentPosition >= element.scrollWidth) {
-
-
-
-
-
-            currentPosition = 0;
-
-
-
-        }
-
-
-
-        element.scroll({left: currentPosition, behavior: 'smooth'});
-
-
+        showSlides(slideIndex += 1);
 
     };
 
 
 
+    linkPrev.onclick = function () {
+
+        showSlides(slideIndex -= 1);
+
+    };
 
 
-});
+
+    function showSlides(index) {
+
+
+        var slides = document.querySelectorAll(".slider_item");
+
+
+        if (index > slides.length) {
+
+            slideIndex = 1;
+
+        }
+
+        if (index < 1) {
+
+            slideIndex = slides.length;
+
+        }
+
+
+        slides.forEach(function (elem) {
+
+            elem.style = "display: none";
+
+        });
+
+
+        slides[slideIndex - 1].style = "display: block";
+
+    }
+
+})();

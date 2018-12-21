@@ -1,53 +1,42 @@
-.container-fluid.portfolio-top
-    h1.white portfolio
-    ul.portfolio-top-menu-items
+.portfolio(id="portfolio")
 
-        each item in portfolioMenuItems
-            li.portfolio-top-menu-item
-                a.portfolio-top-menu-item-link(href="#")= item.name
-
-
-
-
-
-
-
-
-
-mixin portfolioIcon(link, name)
-    img.portfolio-middle-item-icon(src=link)
-    .portfolio-middle-item-plus
-        .portfolio-middle-item-name= name
-
-mixin portfolioIconThin(link, name)
-    img.portfolio-middle-item-thin-icon(src=link)
-    .portfolio-middle-item-plus
-        .portfolio-middle-item-name= name
-
-
-.container-fluid
-    .row.portfolio-middle
-        - for (var i = 1; i <= 4; i++) {
-            -if (i % 2 == 0) {
-                a.portfolio-middle-item-thin(href="#")
-                    +portfolioIconThin("/assets/image/portfolio/portfolio-icon" + i + ".png", "design name")
-            - } else {
-                a.portfolio-middle-item(href="#")
-                    +portfolioIcon("/assets/image/portfolio/portfolio-icon" + i + ".png", "design name")
-            -}
-
-        - }
-    .row.portfolio-middle
-        - for (var i = 5; i <= 8; i++) {
-            -if (i % 2 != 0) {
-                a.portfolio-middle-item-thin(href="#")
-                    +portfolioIconThin("/assets/image/portfolio/portfolio-icon" + i + ".png", "design name")
-            - } else {
-                a.portfolio-middle-item(href="#")
-                    +portfolioIcon("/assets/image/portfolio/portfolio-icon" + i + ".png", "design name")
-            -}
-
-        - }
+    .portfolio_top
         
-.container-fluid.portfolio-bottom
+        .center
+
+            h1.white portfolio
+
+        ul.portfolio_top-menu
+
+            each item in portfolioMenuItems
+
+                li.portfolio_top-menu_item
+
+                    .item_link= item.name
+
+
+    .portfolio_icons
+
+        mixin portfolioIcon(href, name, id, className)
+
+            a.portfolio_icon(href= href class= "portfolio_icon" + id class = className)
+
+                .portfolio_icon-layer
+
+                    img(src="/assets/image/portfolio/portfolio-plus.png")
+                        
+                    .portfolio_icon-name= name
+
+        +portfolioIcon("#", "illustration", 1, "illustration")
+        +portfolioIcon("#", "illustration", 2, "illustration")
+        +portfolioIcon("#", "illustration", 3, "illustration")
+        +portfolioIcon("#", "illustration", 4, "illustration")
+        +portfolioIcon("#", "digital art", 5, "art")
+        +portfolioIcon("#", "digital art", 6, "art")
+        +portfolioIcon("#", "web design", 7, "design")
+        +portfolioIcon("#", "web design", 8, "design")
+
+
+            
+    .portfolio-bottom
 

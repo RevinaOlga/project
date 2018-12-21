@@ -1,87 +1,71 @@
-$buttonDropDown: #F2F2F2
-
-
 .blog
     margin: 0 auto
     padding-bottom: 10rem
     padding-top: 10rem
-    max-width: 1000px
+    max-width: 100rem
 
-.blog_wrap
-    margin-top: 10rem
-    &__closed
-        height: 0
-        overflow: hidden
-    &__opened
-        height: 100%
-        transition: height 2s
-        margin-top: -5rem
-        
-.blog_block
-    display: flex
-    justify-content: center
-    margin: 5rem 0
+    &_wrap
+        margin-top: 10rem
 
-.blog_block-image
-    margin: 0 1.5rem
-    //width: 100%
-    height: 20rem
+        &__closed
+            height: 0
+            overflow: hidden
+            transition-duration: .5s
 
-    & .image-layer1
-        height: 100%
-        width: 100%
+        &__opened
+            height: 55rem
+            
+    &_block
+        display: flex
+        justify-content: center
+        margin: 5rem 0
 
+        &-image
+            margin: 0 1.5rem
+            height: 20rem
+            & .image-layer
+                transition-duration: .6s
 
+        &-post
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin: 0 1.5rem
 
-.blog_block-post
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    //width: 58rem
-    margin: 0 1.5rem
+@media screen and (max-width: 800px)
+    .blog_wrap__opened
+        height: 100rem
 
 .post_title
+    font-family: $fontRaleway
+    font-weight: bold
     font-size: 2rem
-
-
+    color: $darkGreyColor
 
 .post_content
-    font-size: 1.6rem
+    @include textContentFont($GreyColor)
     text-align: justify
 
 a.post_button
-    display: flex
-    justify-content: center
-    align-items: center
+    @include alighCenter
     width: 12rem
     height: 4rem
-    background-color: #000
+    background-color: $bgHeader
+    font-family: $fontLato
     text-transform: uppercase
     font-size: 1.6rem
-    color: #fff
+    color: $light
+    transition-duration: .3s
+    text-decoration: none
+
     &:hover
-        background-color: $activeColor
+        background-color: $activColor
         cursor: pointer
-        text-decoration: none
-        //color: #fff
-
-@media screen and (max-width: 800px)
-    .blog_block
-        flex-wrap: wrap
-    .blog_block-post
         
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        min-height: 18rem
-        margin: 2rem 1.5rem
-
 
 
 .blog_drop-down
-    display: flex
-    justify-content: center
-    align-items: center
+    @include alighCenter
     width: 4.5rem
     height: 4.5rem
     background-color: $buttonDropDown
@@ -90,30 +74,44 @@ a.post_button
     font-weight: bold
     transform: rotate(-90deg)
     margin: 0 auto
+    transition-duration: .5s
 
     &:hover
         cursor: pointer
 
-.blog_drop-down__current
-    transform: rotate(90deg)
+    &__current
+        transform: rotate(90deg)
 
 
 .post_meta
     display: flex
 
 .meta_item
-    display: flex
-    justify-content: center
-    align-items: center
+    @include alighCenter
     font-size: 1.2rem
     margin-right: 2rem
+    font-family: $fontLato
+    font-size: 1.2rem
+    color: $GreyColor
+
     & a.user-icon
         display: inline-block
         background: url("/assets/image/blog/user.png") no-repeat
         width: 1.5rem
         height: 1.6rem
+        transition-duration: .3s
+
         &:hover
             background: url("/assets/image/blog/user-active.png") no-repeat
             cursor: pointer
+
     & .meta_user
         margin-left: 0.8rem
+
+@media screen and (max-width: 800px)
+
+    .blog_block
+        flex-wrap: wrap
+
+    .blog_block-post
+        margin: 2rem 1.5rem

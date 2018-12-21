@@ -1,39 +1,58 @@
-$buttonText: 2rem
-
 .feature
     margin: 10rem auto
-.feature_column
-    display: flex
-    flex-direction: column
-    justify-content: center
-    margin-top: 10rem
-.feature_item-left
-    justify-content: flex-end
-.feature_item-right
-    justify-content: flex-start
-.feature_item
-    width: 37rem
-    height: 5rem
-    margin: 1rem
-    text-transform: uppercase
-    outline: 1px solid $border-color
-    display: flex
-    align-items: center
-    font-size: $buttonText
 
+    &_wrap
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-wrap: wrap
+        margin-top: 10rem
 
-    &:hover
-        cursor: pointer
-        background-color: $mark-color
-        color: #fff
-        & .feature_item-icon
-            background: url("/assets/image/feature/icon-active.png") no-repeat
-    &-icon
+    &_column
+        display: flex
+        flex-direction: column
+        margin-top: 10rem
 
-        width: 37px
-        height: 32px
-        background: url("/assets/image/feature/icon.png") no-repeat
-        margin: 0 2rem
+    &_item
+        width: 37rem
+        height: 5rem
+        margin: 1rem
+        outline: 1px solid $border-color
+        display: flex
+        align-items: center
+        @include linkTitle($darkGreyColor, uppercase)
+        transition-duration: .3s
+
+        &-icon
+            @include hexagonBorder(30px, $border-color, 9px, $border-color)
+            margin: 0 2rem
+
+        & img.icon2
+            display: inline-block
+
+        & img.icon1
+            display: none 
+
+        &-left
+            justify-content: flex-end
+
+        &-right
+            justify-content: flex-start
+
+        &:hover
+            cursor: pointer
+            background-color: $activColor
+            color: $light
+            
+
+            & .feature_item-icon
+                @include hexagonBorder(30px, $light, 9px, $light)
+
+                & img.icon1
+                    display: inline-block
+
+                & img.icon2
+                    display: none 
 
 
 .feature_image
@@ -45,23 +64,19 @@ $buttonText: 2rem
     justify-content: center
     align-items: flex-end
 
-.feature_content
-    display: flex
-    align-items: flex-start
-    justify-content: center
-    flex-wrap: wrap
-    margin-top: 10rem
+
 
 .feature-button
     @include button
-    background-color: #393939
+    background-color: $buttonGreyColor
+    outline: 1px solid $buttonGreyColor
     margin-bottom: 8rem
-    
+    transition: outline .3s
+    text-decoration: none
     
     &:hover
-        border: 1px solid $mark-color
-        text-decoration: none
-        color: #fff
+        outline: 1px solid $activColor
+        color: $light
 
 
 @media screen and (max-width: 1300px)

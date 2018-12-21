@@ -1,15 +1,16 @@
 h2.light
-    color: $menuLink
+    color: $lightGreyColor
 
 .client
     background: url("/assets/image/client/bg-client.jpg") rgba($bgHeader, 0.9) no-repeat
     margin: 0 auto
-    max-width: 1400px
-    min-height: 650px
+    max-width: 140rem
+    min-height: 65rem
     padding-top: 10rem
+    box-sizing: border-box
 
     &_block
-        margin: 10rem auto
+        margin: 10rem auto 0 auto
         max-width: 1160px
         display: flex
 
@@ -24,30 +25,29 @@ h2.light
 
             & .item_name
                 font-size: 1.6rem
-                color: $mark-color
+                color: $activColor
                 text-transform: uppercase
+                font-family: $fontRaleway
+                font-weight: bold
                 margin: 1.5rem 0 2rem 0
 
             & .item_content
-                color: $menuLink
-                margin: 5rem 0
+                color: $lightGreyColor
+                margin: 3.5rem 0
 
             &__active
                 display: flex
 
 
 
-h3.items_title 
-    font-size: 2rem
-    text-transform: uppercase
+h3.items_title
+    @include linkTitle($light, uppercase)
     text-align: center
-    color: #fff
+
 
 
 .client_radio_buttons
-    display: flex
-    align-items: center
-    justify-content: center
+    @include alighCenter
 
 
 .client-radio_button input
@@ -59,51 +59,52 @@ h3.items_title
     width: 8px
     height: 8px
     margin: 0 3px
-    background-color: #E0E0E0
+    background-color: $circleLight
+    transition: background-color .3s
 
 .client-radio_button:hover input:not(:checked) ~ label::after
-    background-color: $mark-color
-    display: block
+    background-color: $activColor
+    display: inline-block
     cursor: pointer
 
 .client-radio_button input:checked ~ label::after
-    background-color: $mark-color
-    color: red
-    display: block
-
-
+    background-color: $activColor
+    display: inline-block
 
 
 .client_icons
     margin: 0 2rem
+
     &-wrap
         display: flex
         justify-content: space-between
 
-
 .client_icon
-
     width: 270px
     height: 120px
     display: flex
     align-items: center
     justify-content: center
-    background: radial-gradient(ellipse, #fff 20%, #EDEDED 40%, #777)
-    color: #000
+    background: radial-gradient(ellipse, $light 20%, #EDEDED 40%, #777777)
     margin: 0 1.5rem 3.5rem
+    text-decoration: none
+
 
     &-title
-        font-size: 3rem
+        @include linkTitle($darkGreyColor, none)
+
     &-image
          margin-right: 1rem
+
     &:hover
-        background: #fff
-        text-decoration: none
-        color:#000
+        background: $light
+        color: $bgHeader
+
 
 
 
 @media screen and (max-width: 900px)
+
     .client_block
         flex-direction: column
 

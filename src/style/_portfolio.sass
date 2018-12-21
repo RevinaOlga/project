@@ -1,101 +1,108 @@
-$bg-dark: #262626
-$color-white: white
+.portfolio
+    margin: 0 auto
+    max-width: 140rem
 
 
-
-.portfolio-top 
-
-    padding-top: 100px
-    height: 270px
-    background-color: $bg-dark
+.portfolio_top 
+    padding-top: 8rem
+    height: 27rem
+    background-color: $darkGreyColor
     text-align: center
-    &-menu 
-        margin-top: 20px
+    box-sizing: border-box
 
-        &-item 
+
+    &-menu 
+        margin-top: 2rem
+        @include alighCenter
+
+        &_item 
             display: inline-block
             font-weight: bold
-            margin-right: 20px
-            &-link 
-                color: #9F9F9F
+            margin-right: 2rem
+            margin-top: 3rem
+
+            & .item_link 
+                @include textContentFont($lightGreyColor)
+                transition-duration: .3s
+                text-decoration: none
+
                 &:hover 
-                    text-decoration: none
-                    color: #FF0036
+                    
+                    color: $activColor
                     transition: color .2s
+                    cursor: pointer
 
-@mixin ItemSize ($width, $height)
-    display: inline-block
+
+@mixin portfolioIcon($width, $id)
     width: $width
-    height: $height
+    height: 35rem
     position: relative
+    background: url('/assets/image/portfolio/portfolio-icon' + $id + '.png') no-repeat
 
-@mixin ItemHoverSizePosition ($width, $height, $left, $top)
-    display: inline-block
-    width: $width
-    height: $height
-    position: absolute
-    left: $left 
-    top: $top
+    & .portfolio_icon-layer
+        height: 0
+        @include alighCenter
+        flex-direction: column
+        background-color: transparent
 
-.white 
-    color: $color-white
+        & img
+            height: 0
 
+        & .portfolio_icon-name
+            overflow: hidden
 
-.portfolio-middle
+    &:hover
+        & .portfolio_icon-layer
+            position: absolute
+            width: $width
+            height: 35rem
+            transition: background-color 0.5s
+            background-color: rgba(0, 0, 0, 0.9)
+            @include alighCenter
+            flex-direction: column
+            @include textContentFont($light)
 
-    background-color: $bg-dark
-    margin-left: auto
-    margin-right: auto
-    width: 1400px
-    &-item 
-        @include ItemSize(400px, 350px)
-        &-name 
-            color: white
-            @include ItemHoverSizePosition (100px, 0, -35px, 50px)
-            font-weight: bold
+            & img
+                height: auto
+                margin-bottom: 1rem
 
-        &-plus
-            display: none
-        &-icon
-            -webkit-filter: brightness(100%)
-        &-thin 
-            @include ItemSize(300px, 350px)
-            &-icon
-                -webkit-filter: brightness(100%)
-
+.portfolio_icons
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
 
 
-@media screen and (max-width: 1400px) 
-    .portfolio-middle 
-        width: 700px
+    & a.portfolio_icon1
+        @include portfolioIcon(40rem, 1)
 
-.portfolio-middle-item-thin:hover .portfolio-middle-item-thin-icon, .portfolio-middle-item:hover .portfolio-middle-item-icon
+    & a.portfolio_icon2
+        @include portfolioIcon(30rem, 2)
 
-    -webkit-filter: brightness(10%)
-    transition: -webkit-filter .3s
+    & a.portfolio_icon3
+        @include portfolioIcon(40rem, 3)
+
+    & a.portfolio_icon4
+        @include portfolioIcon(30rem, 4)
+
+    & a.portfolio_icon5
+        @include portfolioIcon(30rem, 5)
+
+    & a.portfolio_icon6
+        @include portfolioIcon(40rem, 6)
+
+    & a.portfolio_icon7
+        @include portfolioIcon(30rem, 7)
+        
+    & a.portfolio_icon8
+        @include portfolioIcon(40rem, 8)
 
 
-.portfolio-middle-item:hover .portfolio-middle-item-plus,.portfolio-middle-item-thin:hover .portfolio-middle-item-plus
-    @include ItemHoverSizePosition (25px, 25px, 48%, 40%)
-    background: url('/assets/image/portfolio/portfolio-plus.png') no-repeat
-    font-size: 16px
-    transition: font-size .3s
-
-
-
+.portfolio_icon__current
+    display: none
 
 .portfolio-bottom 
-    height: 110px
-    background-color: $bg-dark
-
-
-
-
-
-
-
-
-
+    height: 11rem
+    background-color: $darkGreyColor
 
 
 

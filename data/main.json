@@ -1,40 +1,36 @@
 {
-    "header": {
-        "logo": "HW 13"
-    },
-
 
     "menuItems": [{
         "name": "home",
-        "href": "#"
+        "href": "#header"
     }, 
     {
         "name": "about us",
-        "href": "#"
+        "href": "#about"
     },
     {
         "name": "portfolio",
-        "href": "#"
+        "href": "#portfolio"
     },
     {
         "name": "clients",
-        "href": "#"
+        "href": "#clients"
     },
     {
         "name": "team",
-        "href": "#"
+        "href": "#team"
     },
     {
         "name": "services",
-        "href": "#"
+        "href": "#services"
     },
     {
         "name": "blog",
-        "href": "#"
+        "href": "#blog"
     },
     {
         "name": "contact",
-        "href": "#"
+        "href": "#contact"
     }],
 
     "slides": [{
@@ -78,13 +74,13 @@
 
     "spoilers": [{
         "spoilerTitle": "What is creativia",
-        "spoilerContent": "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев"
+        "spoilerContent": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl.  Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. "
     }, {
         "spoilerTitle": "Experiences",
-        "spoilerContent": "Самым известным «рыбным» текстом является знаменитый Lorem ipsum. Считается, что впервые его применили в книгопечатании еще в XVI веке. Своим появлением Lorem ipsum обязан древнеримскому философу Цицерону, ведь именно из его трактата «О пределах добра и зла»"
+        "spoilerContent": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum "
     }, {
         "spoilerTitle": "Learn more",
-        "spoilerContent": "И даже с языками, использующими латинский алфавит, могут возникнуть небольшие проблемы: в различных языках те или иные буквы встречаются с разной частотой, имеется разница в длине наиболее распространенных слов. Отсюда напрашивается вывод, что все же лучше использовать в качестве «рыбы» текст на том языке, который планируется использовать при запуске проекта. Сегодня существует несколько вариантов Lorem ipsum, кроме того, есть специальные генераторы, создающие"
+        "spoilerContent": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum"
     }],
 
     "aboutBottomIcons": [{
@@ -95,28 +91,28 @@
     }, {
         "id": 2,
         "name": "RETINA READY",
-        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "content": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. ",
         "href": "#"
     }, {
         "id": 3,
         "name": "RESPONSIVE",
-        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "content": "Cras varius odio a arcu rutrum, nec posuere lacus imperdiet.vivamus sit amet tortor mollis eget.",
         "href": "#"
     }, {
         "id": 4,
         "name": "CLEAN & USEFUL",
-        "content": "Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at.",
         "href": "#"
     }],
 
     "portfolioMenuItems":[{
-        "name": "ALL"
+        "name": "all"
     }, {
-        "name": "ILLUSTRATION"
+        "name": "illuctration"
     }, {
-        "name": "DIGITAL ART"
+        "name": "digital art"
     }, {
-        "name": "WEB DESIGN"
+        "name": "web design"
     }],
 
     "featureItenNames":[{
@@ -132,17 +128,17 @@
     "clients": [{
         "name": "amr srour",
         "link": "/assets/image/client/client1.png",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis, nec posuere lacus imperdiet. "
     },
     {
         "name": "sarah doe",
-        "link": "/assets/image/client/client1.png",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
+        "link": "/assets/image/client/client2.png",
+        "content": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. Cras varius odio a arcu rutrum, nec posuere lacus imperdiet."
     },
     {
         "name": "johan de",
-        "link": "/assets/image/client/client1.png",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. "
+        "link": "/assets/image/client/client3.png",
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum."
     }],
 
     "clientRadioButtons": [{
@@ -192,7 +188,7 @@
 
 
     "teamItems": [{
-        "href": "/assets/image/team/foto2.jpg",
+        "href": "/assets/image/team/foto1.jpg",
         "name": "bruce wayne",
         "profession": "Webdisigner"
     },
@@ -247,32 +243,32 @@
         "href": "#",
         "id": 2,
         "name": "wordpress",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum."
     },
     {
         "href": "#",
         "id": 3,
         "name": "ui /ux design",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+        "content": "Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt magna a, iaculis nisl. Cras varius odio a arcu rutrum, nec posuere lacus imperdietsit amet ferment umporttitor lorem."
     }],
 
     "serviceItemsRight": [{
         "href": "#",
         "id": 4,
         "name": "html / css",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+        "content": "Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. Praesent faucibus nisl sit amet nulla sollicitudin."
     },
     {
         "href": "#",
         "id": 5,
         "name": "applications",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+        "content": "Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin. Praesent faucibus nisl sit amet nulla sollicitudin."
     },
     {
         "href": "#",
         "id": 6,
         "name": "responsive layout",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin."
+        "content": "Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. "
     }],
 
     "posts": [{

@@ -1,65 +1,12 @@
-
-$fs-h1: 30px
-$fs-h2: 16px
-$fs-h6: 20px
-$p: 16px
 $border-color: #E7E7E7
-$bg-color: #F7F7F7
-
-$mark-color: #FF0036
-$darkGreyColor: #505050
-$darkColor: #2E2E2E
-
-$width: 1170px
-$menuLink: #A4A4A4
-$menuLinkHover: #fff
-$heightMenu: 7rem
-$activColor: #FF0036
-$bgHeader: #000000
 $circleLight: #E0E0E0
-$bgDark: #272727
-$servicBlock: #343434
-$servicBlockActiv: #3D2329
+$darkGreyColor: #505050
 
 
-
-.mark-color 
-    color: $mark-color
-
-@mixin font-h($fs)
-    text-align: center
-    font-weight: bold
-    font-size: $fs
-
-h1
-    @include font-h($fs-h1)
-
-h2
-    @include font-h($fs-h2)
-    margin-top: 40px
-
-
-@import 'component/_header.sass'
 
 .post_meta
     display: flex
 
-.meta_item
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 1.2rem
-    margin-right: 2rem
-    & a.user-icon
-        display: inline-block
-        background: url("/assets/image/blog/user.png") no-repeat
-        width: 1.5rem
-        height: 1.6rem
-        &:hover
-            background: url("/assets/image/blog/user-active.png") no-repeat
-            cursor: pointer
-    & .meta_user
-        margin-left: 0.8rem
 .user-info
     display: flex
     flex-direction: column
@@ -69,8 +16,6 @@ h2
 .user-info_wrap
     display: flex
     flex-wrap: wrap
-
-
 
 
 .user-info_image
@@ -93,5 +38,3 @@ h2
     width: 100%
     margin: 3rem 0
 
-.user-info_meta
-    margin: 0 4rem
